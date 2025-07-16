@@ -1,0 +1,96 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+
+</style>
+<body><div class="tabs" role="tablist" aria-label="Menu Categories">
+    <button class="active" role="tab" aria-selected="true" aria-controls="coffee" id="tab-coffee" onclick="showCategory('coffee')">☕ Coffee</button>
+    <button role="tab" aria-selected="false" aria-controls="pastry" id="tab-pastry" onclick="showCategory('pastry')">🥐 Pastry</button>
+    <button role="tab" aria-selected="false" aria-controls="dessert" id="tab-dessert" onclick="showCategory('dessert')">🍰 Dessert</button>
+  </div>
+
+  <div id="menu-container">
+
+    <div class="menu-grid" id="coffee" role="tabpanel" aria-labelledby="tab-coffee">
+      <div class="menu-card" style="animation-delay: 0s;">
+        <img src="images/pexels-chevanon-302904.jpg" alt="Latte Art" />
+        <div class="menu-info">
+          <h3>Latte Art</h3>
+          <p>Delicate design poured with love.</p>
+          <div class="price-order">
+            <div class="price">$3.50</div>
+            <button class="order-btn" onclick="addToOrder('Latte Art', 3.50)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" style="animation-delay: 0.1s;">
+        <img src="images/pexels-indraprojectsofficial-32927828.jpg" alt="Espresso" />
+        <div class="menu-info">
+          <h3>Espresso</h3>
+          <p>Rich and bold shot of pure coffee.</p>
+          <div class="price-order">
+            <div class="price">$2.80</div>
+            <button class="order-btn" onclick="addToOrder('Espresso', 2.80)">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="pastry" role="tabpanel" aria-labelledby="tab-pastry" hidden>
+      <div class="menu-card" style="animation-delay: 0s;">
+        <img src="images/pexels-vitalyagorbachev-12433994.jpg" alt="Croissant" />
+        <div class="menu-info">
+          <h3>Fresh Croissant</h3>
+          <p>Warm and buttery, baked daily.</p>
+          <div class="price-order">
+            <div class="price">$4.00</div>
+            <button class="order-btn" onclick="addToOrder('Fresh Croissant', 4.00)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" style="animation-delay: 0.1s;">
+        <img src="images/pexels-chokniti-khongchum-1197604-2280545.jpg" alt="Blueberry Muffin" />
+        <div class="menu-info">
+          <h3>Blueberry Muffin</h3>
+          <p>Sweet and soft treat for mornings.</p>
+          <div class="price-order">
+            <div class="price">$3.80</div>
+            <button class="order-btn" onclick="addToOrder('Blueberry Muffin', 3.80)">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="dessert" role="tabpanel" aria-labelledby="tab-dessert" hidden>
+      <div class="menu-card" style="animation-delay: 0s;">
+        <img src="images/pexels-valeriya-1282279.jpg" alt="Chocolate Cake" />
+        <div class="menu-info">
+          <h3>Chocolate Cake</h3>
+          <p>Rich and moist chocolate delight.</p>
+          <div class="price-order">
+            <div class="price">$5.50</div>
+            <button class="order-btn" onclick="addToOrder('Chocolate Cake', 5.50)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" style="animation-delay: 0.1s;">
+        <img src="images/pexels-orlovamaria-4946407.jpg" alt="Cheesecake" />
+        <div class="menu-info">
+          <h3>Cheesecake</h3>
+          <p>Classic creamy dessert.</p>
+          <div class="price-order">
+            <div class="price">$5.00</div>
+            <button class="order-btn" onclick="addToOrder('Cheesecake', 5.00)">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <title>About Us | Cafe Saba</title>
+  <link rel="stylesheet" href="style.css"  />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Cafe Saba</h1>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle theme">
+  <span id="theme-icon">🌙</span>
+</button>
+      </div>
+    </nav>
+
+
+  </header>
+
+
+<section class="hero">
+  <div class="hero-content">
+  
+    <h2>About Us</h2>
+    
+  </div>
+</section>
+
+
+  <section class="about-section">
+    <div class="container">
+      <h2>About Cafe Saba</h2>
+      <p>We're not just a coffee shop – we're a cozy corner in the heart of the city where people gather, hearts connect, and memories are brewed.</p>
+      <img src="images/pexels-pic-matti-450440252-32952462.jpg"alt="Our Cafe">
+      <p>Founded in 2025, Cafe Saba is a place where classic elegance meets modern warmth. Our pastries are handmade, our coffee is crafted with love, and every detail is curated for comfort and calm.</p>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About Cafe Saba</h4>
+      <p>A cozy spot where elegance meets coffee aroma and warm memories brew every day.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>123 Coffee Street, Tehran</p>
+      <p>+98 912 345 6789</p>
+      <p>info@cafesaba.com</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <a href="#menu">Menu</a><br>
+      <a href="#gallery">Gallery</a><br>
+      <a href="#reservation">Reservation</a>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">© 2025 Cafe Saba. All rights reserved.</p>
+</footer>
+  <script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+
+  function toggleMode() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Saba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+  
+  </style>
+</head>
+<body>
+  <!---------Navbar------------>
+
+
+  <header class="navbar">
+    <h1 class="logo">Cafe Saba</h1>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle theme">
+  <span id="theme-icon">🌙</span>
+</button>
+      </div>
+    </nav>
+  </header>
+<!-----------End Of Navabar-------------->
+
+
+<!------Banner-------------->
+  <section class="hero">
+  <div class="hero-content">
+    <a href="#reservation" class="hero-btn">Make a Reservation</a>
+    <h2>Welcome to Cafe Saba</h2>
+    <p>A cozy and elegant place where coffee meets calm.</p>
+  </div>
+</section>
+<!--------End Of Banner------------->
+
+<hr class="section-divider">
+
+    <!------------Gallery--------------->
+
+  <!-- Filter Buttons -->
+<div class="filter-buttons">
+  <button onclick="filterGallery('all')">All</button>
+  <button onclick="filterGallery('coffee')">Coffee</button>
+  <button onclick="filterGallery('pastry')">Pastry</button>
+  <button onclick="filterGallery('Dessert')">Dessert</button>
+  <button onclick="filterGallery('interior')">Interior</button>
+</div>
+<!--------->
+
+
+  <section class="gallery" id="gallery">
+
+  <p id="empty-message" style="display:none; text-align:center; margin-top:20px; color:#777;">
+  No items found in this category.
+</p>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-adriannacalvo-23384623.WebP" alt="Cappucino">
+    <div class="info">
+      <h4>Cappucino</h4>
+      <p>Rich & Creamy.</p>
+    </div>
+  </div>
+  <div class="gallery-card Pastry">
+    <img src="images/pexels-lucasguizo-3780469.WebP" alt="Pancake">
+    <div class="info">
+      <h4>Fresh Pancake</h4>
+      <p>with fresh fruit and honey.</p>
+    </div>
+  </div>
+  <div class="gallery-card Interior">
+    <img src="images/pexels-ekrulila-32416014.WebP" alt="Interior">
+    <div class="info">
+      <h4>Our Space</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-chevanon-302887.WebP" alt="Latte Art">
+    <div class="info">
+      <h4>Latte Art</h4>
+      <p>Delicate design poured with love.</p>
+    </div>
+  </div>
+  <div class="gallery-card Pastry">
+    <img src="images/pexels-polina-tankilevitch-4828339.WebP" alt="Croissant">
+    <div class="info">
+      <h4>Fresh Croissant</h4>
+      <p>Warm and buttery, baked daily.</p>
+    </div>
+  </div>
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-sunsetoned-10026601.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-karthik-reddy-130698-397913.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-emre-ozturk-113008085-18715887.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-pixabay-372886.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-brigitte-tohm-36757-377903.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-roman-odintsov-4869420.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+
+  <div class="gallery-card Coffee">
+    <img src="images/pexels-eugenia-sol-1769194548-30922284.WebP" alt="Coffee">
+    <div class="info">
+      <h4>Coffee Texture</h4>
+      <p>Cozy, calm and designed with soul.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-------End Of Gallery---------->
+<hr class="section-divider">
+<!---------Menu--------->
+
+<section id="menu">
+    <h2>Menu - Cafe Saba</h2>
+  
+<div class="tabs" role="tablist" aria-label="Menu Categories">
+    <button class="active" role="tab" aria-selected="true" aria-controls="coffee" id="tab-coffee" onclick="showCategory('coffee')">☕ Coffee</button>
+    <button role="tab" aria-selected="false" aria-controls="pastry" id="tab-pastry" onclick="showCategory('pastry')">🥐 Pastry</button>
+    <button role="tab" aria-selected="false" aria-controls="dessert" id="tab-dessert" onclick="showCategory('dessert')">🍰 Dessert</button>
+  </div>
+
+  <div id="menu-container">
+
+    <div class="menu-grid" id="coffee" role="tabpanel" aria-labelledby="tab-coffee">
+      <div class="menu-card" style="animation-delay: 0s;">
+        <img src="images/pexels-chevanon-302904.WebP" alt="Latte Art" />
+        <div class="menu-info">
+          <h3>Latte Art</h3>
+          <p>Delicate design poured with love.</p>
+          <div class="price-order">
+            <div class="price">$3.50</div>
+            <button class="order-btn" onclick="addToCart('Latte Art', 3.50)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" style="animation-delay: 0.1s;">
+        <img src="images/pexels-indraprojectsofficial-32927828.WebP" alt="Espresso" />
+        <div class="menu-info">
+          <h3>Espresso</h3>
+          <p>Rich and bold shot of pure coffee.</p>
+          <div class="price-order">
+            <div class="price">$2.80</div>
+            <button class="order-btn" onclick="addToCart('Espresso', 2.80)">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="pastry" role="tabpanel" aria-labelledby="tab-pastry" hidden>
+      <div class="menu-card" style="animation-delay: 0s;">
+        <img src="images/pexels-vitalyagorbachev-12433994.WebP" alt="Croissant" />
+        <div class="menu-info">
+          <h3>Fresh Croissant</h3>
+          <p>Warm and buttery, baked daily.</p>
+          <div class="price-order">
+            <div class="price">$4.00</div>
+            <button class="order-btn" onclick="addToCart('Fresh Croissant', 4.00)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" style="animation-delay: 0.1s;">
+        <img src="images/pexels-chokniti-khongchum-1197604-2280545.WebP" alt="Blueberry Muffin" />
+        <div class="menu-info">
+          <h3>Blueberry Muffin</h3>
+          <p>Sweet and soft treat for mornings.</p>
+          <div class="price-order">
+            <div class="price">$3.80</div>
+            <button class="order-btn" onclick="addToCart('Blueberry Muffin', 3.80)">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="dessert" role="tabpanel" aria-labelledby="tab-dessert" hidden>
+      <div class="menu-card" style="animation-delay: 0s;">
+        <img src="images/pexels-valeriya-1282279.WebP" alt="Chocolate Cake" />
+        <div class="menu-info">
+          <h3>Chocolate Cake</h3>
+          <p>Rich and moist chocolate delight.</p>
+          <div class="price-order">
+            <div class="price">$5.50</div>
+            <button class="order-btn" onclick="addToCart('Chocolate Cake', 5.50)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card" style="animation-delay: 0.1s;">
+        <img src="images/pexels-orlovamaria-4946407.WebP" alt="Cheesecake" />
+        <div class="menu-info">
+          <h3>Cheesecake</h3>
+          <p>Classic creamy dessert.</p>
+          <div class="price-order">
+            <div class="price">$5.00</div>
+            <button class="order-btn" onclick="addToCart('Cheesecake', 5.00)">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </section>
+
+
+  <!-------End Of Menu------------->
+
+<hr class="section-divider">
+
+
+  <!------Reservation Section-------->
+
+<section class="reservation-section" id="reservation">
+    <h2>Reserve a Table</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="number" placeholder="Phone Number" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="number" placeholder="Number of Guests" min="1" required>
+      <input type="date" required>
+      <input type="time" required>
+      <textarea placeholder="Special Requests" rows="4"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="reservation-msg" style="display:none; color: #3e2f1c; margin-top: 20px; font-weight: bold;">
+  ☕ Thank you, your table is reserved! We'll contact you soon.
+</p>
+  </section>
+
+
+
+  <!-----End Of Reservation Section------>
+
+
+
+<!--------Footer----------->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About Cafe Saba</h4>
+      <p>A cozy spot where elegance meets coffee aroma and warm memories brew every day.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <ul>
+        <li>123 Coffee Street, Tehran</li>
+        <li>+98 912 345 6789</li>
+        <li>info@cafesaba.com</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Cafe Saba. All rights reserved.</p>
+  </div>
+</footer>
+<!----------End Of Footer---------------->
+
+<button id="backToTop" title="Go to top">⬆</button>
+
+<!-- 🛒 Cart Icon -->
+<div class="cart-icon" onclick="toggleCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- 🛍️ Cart Panel -->
+<div id="cart-panel" class="cart-panel">
+  <div class="cart-header">
+    <h3>Your Order</h3>
+    <button onclick="toggleCart()">×</button>
+  </div>
+  <ul id="cart-items"></ul>
+  <p>Total items: <span id="cart-count">0</span></p>
+  <div class="cart-total">
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button class="checkout-btn">Confirm Order</button>
+  </div>
+</div>
+
+  <script src="script.js">
+  
+  
+</script>
+</body>
+</html>
