@@ -41,7 +41,7 @@ This project was created as a personal front-end portfolio project for practice 
 Do not use, copy or redistribute this design or its code without explicit written permission from the author.
 
 ##  💌 Contact
-Made with love by Saba Vafaie
+Made with love by Saba Vafaei
 Linkdin:Saba Vafaei
 Email:vafaiesaba@gmail.com
 🌐 Demo: https://saba97.github.io/Cafe-Saba/
