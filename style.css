@@ -620,6 +620,8 @@ nav a {
       display: flex;
       align-items: center;
       gap: 1rem;
+
+      
     }
 
 
@@ -641,7 +643,11 @@ nav a {
         position: absolute;
         top: 60px;
         right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        align-items: center;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* برای حالت موبایل */
         background: var(--navbar-bg);
         flex-direction: column;
         padding: 15px;
@@ -678,9 +684,7 @@ p {
 .reservation-form {
     width: 90%;
   }
-.nav-links li a {
-    color: #fff !important; /* یا یه رنگ تیره مشخص */
-  }
+
     }
     .filter-buttons {
   text-align: center;
