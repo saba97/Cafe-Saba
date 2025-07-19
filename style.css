@@ -628,6 +628,13 @@ nav a {
 
 
  @media (max-width: 768px) {
+  .hero{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+
+  }
 
 
       .hamburger {
@@ -689,8 +696,8 @@ nav a {
   .navbar {
     padding-left: 0 !important;
     margin-left: 0 !important;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    
+    color:#d6c8add3
    }
 
     }
