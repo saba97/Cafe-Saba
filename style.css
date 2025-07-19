@@ -683,19 +683,8 @@ nav a {
     
     color:#d6c8add3
    }
-  .reservation-form {
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .reservation-form input,
-  .reservation-form select,
-  .reservation-form button {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
+  
+/*
   .hero {
     
     width: 100%;
@@ -706,7 +695,7 @@ nav a {
     margin-top: 0;
     height: auto;
   }
-
+*/
   
     }
     .filter-buttons {
@@ -954,6 +943,24 @@ body.dark .reservation-section textarea {
   }
   .gallery {
     grid-template-columns: 1fr 1fr;
+  }
+  reservation-section {
+    padding: 10px;
+  }
+
+  .reservation-section form {
+    padding: 10px;
+  }
+
+  .reservation-section form input,
+  .reservation-section form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .reservation-section form button {
+    font-size: 14px;
+    padding: 10px;
   }
 
 }
