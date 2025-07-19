@@ -628,14 +628,7 @@ nav a {
 
 
  @media (max-width: 768px) {
-  .hero{
-  margin: 0;
-  padding: 0;
-  height:100%;
-  background-size: cover;
-  background-position: center;
-
-  }
+  
 
 
       .hamburger {
@@ -683,24 +676,23 @@ nav a {
   p {
   font-size: 1rem;
     }
-  .reservation-section form {
-    padding: 0 1rem;
-  }
-
-  .reservation-form,
-  .reservation-form input,
-  .reservation-form textarea,
-  .reservation-form select {
-    width: 100%;
-    box-sizing: border-box;
-  }
+  
   .navbar {
     padding-left: 0 !important;
     margin-left: 0 !important;
     
     color:#d6c8add3
    }
+  .reservation-form {
+    padding: 1rem;
+  }
 
+  .reservation-form input,
+  .reservation-form select,
+  .reservation-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
     }
     .filter-buttons {
   text-align: center;
