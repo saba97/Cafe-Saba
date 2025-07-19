@@ -547,6 +547,8 @@ nav a {
   text-align: center;
   position: relative;
   color: white;
+ 
+  
   
 }
 
@@ -1010,3 +1012,59 @@ img {
   height: auto;
 }
 
+.contact-section {
+  padding: 60px 20px;
+  background-color: #fffaf3;
+  color: #333;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-form,
+.complaint-form {
+  margin: 30px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.complaint-form input,
+.contact-form textarea,
+.complaint-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button,
+.complaint-form button {
+  background-color: #a0522d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover,
+.complaint-form button:hover {
+  background-color: #7b3e1d;
+}
+
+.map iframe {
+  border-radius: 12px;
+  margin-top: 20px;
+}

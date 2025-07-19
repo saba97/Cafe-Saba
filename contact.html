@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <title>Contact us | Cafe Saba</title>
+  <link rel="stylesheet" href="style.css"  />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Cafe Saba</h1>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="index.html/#gallery">Gallery</a>
+        <a href="index.html/#menu">Menu</a>
+        <a href="contact.html">Contact</a>
+        <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle theme">
+  <span id="theme-icon">🌙</span>
+</button>
+      </div>
+    </nav>
+
+
+  </header>
+
+
+<section class="hero">
+  <div class="hero-content">
+  
+    <h2>Contact Us</h2>
+    
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  
+  <div class="contact-info">
+    <p><strong>Address:</strong> 123 Coffee Street, Tehran</p>
+    <p><strong>Phone:</strong> +98 912 123 4567</p>
+    <p><strong>Email:</strong> info@cafesaba.com</p>
+  </div>
+
+  <form class="contact-form">
+    <h3>Send us a message</h3>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <form class="complaint-form">
+    <h3>Complaints & Feedback</h3>
+    <input type="text" placeholder="Your Full Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Describe your complaint" required></textarea>
+    <button type="submit">Submit Complaint</button>
+  </form>
+
+  <div class="map">
+    <h3>Find Us Here</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.999758325049!2d51.4036228757099!3d35.68919722947957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0196eb7283ed%3A0xb8579f6ee66b0a7f!2z2YXYsdmD2LIg2KfZhNmF2KfZhg!5e0!3m2!1sen!2s!4v1626955854123!5m2!1sen!2s" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
