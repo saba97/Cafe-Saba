@@ -105,7 +105,8 @@ body.dark {
   color: white; /* در حالت اولیه (شفاف) */
   position: fixed;
   top: 0;
-  padding: 10px 30px;
+  padding: 0 1rem;
+  justify-content: space-between;
   width: 100%;
   background-color: transparent;
   transition: background-color 0.3s ease;
