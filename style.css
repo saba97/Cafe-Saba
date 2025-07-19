@@ -624,6 +624,8 @@ nav a {
 
 
  @media (max-width: 768px) {
+
+
       .hamburger {
         display: block;
 
@@ -663,6 +665,22 @@ nav a {
 p {
   font-size: 1rem;
 }
+.reservation-container {
+    flex-direction: column;
+    align-items: center;
+  }
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  }
+.reservation-form {
+    width: 90%;
+  }
+.nav-links li a {
+    color: #fff !important; /* یا یه رنگ تیره مشخص */
+  }
     }
     .filter-buttons {
   text-align: center;
@@ -788,6 +806,8 @@ p {
   text-align: center;
   transition: background-color 0.3s, color 0.3s;
 }
+
+
 
 .reservation-section h2 {
   font-family: 'Playfair Display', serif;
