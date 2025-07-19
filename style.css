@@ -686,6 +686,10 @@ p {
   .reservation-section {
     padding: 1rem;
   }
+ .navbar {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
 
     }
     .filter-buttons {
