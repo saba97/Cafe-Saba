@@ -60,6 +60,8 @@ body.dark {
       color: var(--text-color);
     }
 
+  
+
     /* Tabs */
     .tabs {
       display: flex;
